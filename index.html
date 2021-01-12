@@ -14,7 +14,7 @@
   
     <ul class="block-list">
       <li class="block-list__item recipe--small">
-        <div class="recipe__like--small"><i class="fa fa-heart-o"></i> <div class="recipe__likes-num--small">25</div></div>
+        <div class="recipe__like--small"><i class="fa fa-heart-o"></i> <div class="recipe__likes-num--small">like</div></div>
         <div class="recipe__opts--small"><i class="fa fa-ellipsis-v"></i></div>
         <a href="#" class="recipe__img--small">
           <img src="./food.jpg" />
@@ -44,6 +44,12 @@
 
  <script language="javascript">
 $(document).ready(function() {
+
+  $.ajax({ url: "https://api.spoonacular.com/recipes/complexSearch?query=/&apiKey=74bf68aed1924c1385e1296450857f",
+        context: document.body,
+        success: function(){
+           alert("done");
+        }});
    
  });
 
