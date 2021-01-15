@@ -45,11 +45,18 @@
  <script language="javascript">
 $(document).ready(function() {
 
-  $.ajax({ url: "https://api.spoonacular.com/recipes/complexSearch?query=/&apiKey=74bf68aed1924c1385e1296450857fa1",
+  /*$.ajax({ url: "https://api.spoonacular.com/recipes/complexSearch?query=/&apiKey=74bf68aed1924c1385e1296450857fa1",
         context: document.body,
         success: function(){
            console.log("done");
-        }});
+        }});*/
+
+
+
+        $.getJSON( "https://api.spoonacular.com/recipes/complexSearch?query=/&apiKey=74bf68aed1924c1385e1296450857fa1", function( data ) {
+          console.log(data);
+
+});
    
  });
 
