@@ -1,12 +1,7 @@
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-<style src="style.css"></style>
+
     <title>RecipeLand</title>
   </head>
   <body>
@@ -41,29 +36,5 @@
    
  </div>
 
- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
- <script language="javascript">
-$(document).ready(function() {
 
-  /*$.ajax({ url: "https://api.spoonacular.com/recipes/complexSearch?query=/&apiKey=74bf68aed1924c1385e1296450857fa1",
-        context: document.body,
-        success: function(){
-           console.log("done");
-        }});*/
-
-
-
-        $.getJSON( "https://api.spoonacular.com/recipes/complexSearch?query=/&apiKey=74bf68aed1924c1385e1296450857fa1", function( data ) {
-          console.log(data);
-var recipes= data;
-console.log(recipes);
-
-
-
-});
-   
- });
-
-
- </script>
  </body></html>
