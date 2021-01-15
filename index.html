@@ -26,11 +26,32 @@ $(document).ready(function() {
 
         $.getJSON( "https://api.spoonacular.com/recipes/complexSearch?query=/&apiKey=74bf68aed1924c1385e1296450857fa1", function( data ) {
           console.log(data);
-var recipes= data;
+var recipes= data['results'];
+
 console.log(recipes);
 
 
+var items = [];
+  $.each( recipes, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+    console.log(key)
+    console.log(val);
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
 
+
+
+
+
+
+
+
+
+////////
 });
    
  });
