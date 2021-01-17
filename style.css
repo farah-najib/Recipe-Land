@@ -1,0 +1,112 @@
+body {
+    align-items: center;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .card {
+    background-image: url(https://myhappyplates-cdn.s3.amazonaws.com/images/recipes/22ca5843-8cc1-4e0d-ab0a-ea8520b16e13.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 
+      1px 3px 3px rgba(0,0,0,0.2),
+      -1px -1px 4px rgba(0,0,0,0.2);
+    height: 300px;
+    position: relative;
+    transition: box-shadow 130ms ease-in-out;
+    width: 300px;
+  }
+  
+  .card:hover {
+    box-shadow: 
+      2px 6px 6px rgba(0,0,0,0.2),
+      -1px -1px 7px rgba(0,0,0,0.2);
+  }
+  
+  .rating {
+    padding: 0.75em;
+  }
+  
+  .rating .star {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .rating .star:before {
+    background-color: rgba(0,0,0,0.05);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+    content: '';
+    height: 12px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    width: 12px;
+    z-index: 0;
+    border-radius: 50%;
+  }
+  
+  
+  .rating .star svg {
+    fill: white;
+    height: 1em;
+    position: relative;
+    width: 1em;
+    z-index: 1;
+  }
+  
+  .star.no-fill svg{
+    fill: none;
+  }
+  
+  .favorite {
+    transition: all 111ms ease-in-out;
+  }
+  
+  .favorite svg {
+    fill: none;
+    height: 1em;
+    padding: 1px;
+    transition: all 111ms ease-in-out;
+    stroke: lightgray;
+    stroke-width: 12;
+    width: 1em;
+  }
+  
+  .favorite:hover svg {
+    cursor: pointer;
+    stroke: tomato;
+  }
+  
+  .favorite.js-is-selected svg {
+    fill: tomato;
+    stroke: tomato;
+  }
+  
+  .food-info {
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    padding: 1em 2em 2em 1em;
+    position: absolute;
+    right: 0;
+  }
+  
+  .food-info p {
+    margin: 0;
+  }
+  
+  .food-info p span {
+    color: gray;
+    font-size: 14px;
+  }
+  
+  .food-info .favorite {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
