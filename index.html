@@ -40,8 +40,9 @@ const section = document.querySelector('section');
 
           for (var i = 0; i < recipes.length; i++) {
             const myArticle = document.createElement('article');
-            const myH2 = document.createElement('h2');
-            const myPara1 = document.createElement('p');
+            const myH2 = document.createElement('p');
+            const newline = document.createElement('br');
+            const myPara1 = document.createElement('span');
           
 
             myH2.textContent = recipes[i].title;
