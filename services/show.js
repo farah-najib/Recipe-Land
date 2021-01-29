@@ -1,6 +1,6 @@
 
-const header = document.querySelector('card');
-const section = document.querySelector('.food-info');
+const header = document.querySelector('card u-clearfix');
+const section = document.querySelector('card-body');
 $(document).ready(function () {
   $.getJSON("https://api.spoonacular.com/recipes/complexSearch?query=/&apiKey=74bf68aed1924c1385e1296450857fa1",
     function (obj) {
@@ -19,3 +19,20 @@ $(document).ready(function () {
 });
 
 
+/*
+
+ <div class="card u-clearfix">
+      <div class="card-body">
+        <span class="card-number card-circle subtle">01</span>
+        <span class="card-author subtle">John Smith</span>
+        <h2 class="card-title">New Brunch Recipe</h2>
+        <span class="card-description subtle">These last few weeks I have been working hard on a new brunch recipe for you all.</span>
+        <div class="card-read">Read</div>
+        <span class="card-tag card-circle subtle">C</span>
+      </div>
+      <img src="https://s15.postimg.cc/temvv7u4r/recipe.jpg" alt="" class="card-media" />
+    </div>
+    <div class="card-shadow"></div>
+
+
+    */
